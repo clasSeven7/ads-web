@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../styles/programacao-orientado-a-objetos-java.css"
+    />
+    <title>Programação Orientada a Objetos com Java</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Programação Orientada a Objetos com Java</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <h2>Introdução</h2>
+        <p>
+          A Programação Orientada a Objetos (POO) é um paradigma de programação
+          que utiliza "objetos" – estruturas que combinam dados e
+          comportamentos. Java é uma linguagem de programação amplamente
+          utilizada que suporta POO.
+        </p>
+
+        <h2>Principais Conceitos</h2>
+        <h3>Classe</h3>
+        <p>
+          Uma classe é um modelo ou uma planta que define a estrutura e o
+          comportamento dos objetos. Em Java, uma classe é definida usando a
+          palavra-chave <code>class</code>.
+        </p>
+
+        <h3>Objeto</h3>
+        <p>
+          Um objeto é uma instância de uma classe. Ele é criado a partir de uma
+          classe e pode acessar os métodos e atributos definidos na classe.
+        </p>
+
+        <h3>Encapsulamento</h3>
+        <p>
+          O encapsulamento é o conceito de esconder os detalhes internos de um
+          objeto e expor apenas o que é necessário. Em Java, isso é feito usando
+          modificadores de acesso como <code>private</code>,
+          <code>protected</code> e <code>public</code>.
+        </p>
+
+        <h3>Herança</h3>
+        <p>
+          A herança permite que uma classe herde propriedades e métodos de outra
+          classe. Em Java, isso é feito usando a palavra-chave
+          <code>extends</code>.
+        </p>
+
+        <h3>Polimorfismo</h3>
+        <p>
+          O polimorfismo permite que objetos de diferentes classes sejam
+          tratados como objetos de uma classe comum. Em Java, isso é alcançado
+          através de métodos sobrescritos e interfaces.
+        </p>
+
+        <h2>Exemplo de Código</h2>
+        <pre>
+          <code>
+            class Animal {
+              void fazerSom() {
+                System.out.println("O animal faz um som");
+              }
+            }
+
+            class Cachorro extends Animal {
+              void fazerSom() {
+                System.out.println("O cachorro late");
+              }
+            }
+
+            public class Main {
+              public static void main(String[] args) {
+                Animal meuAnimal = new Cachorro();
+                meuAnimal.fazerSom(); // Saída: O cachorro late
+              }
+            }
+          </code>
+      </pre>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Programação Orientada a Objetos com Java</p>
+    </footer>
+  </body>
+</html>
