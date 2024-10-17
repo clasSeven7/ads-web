@@ -271,6 +271,56 @@ ul li {
   line-height: 1.8;
 }
 
+/* ========================= Professional Profile ============================*/
+.professional-profile p {
+  padding-bottom: 2rem;
+}
+.professional-profile-list {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2%;
+}
+
+.professional-profile-list li {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  line-height: 1.8;
+}
+
+/* ================================ Areas Activity ========================== */
+.areas-activity p {
+  padding-bottom: 2rem;
+}
+
+.areas-activity-list {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2%;
+}
+
+.areas-activity-list .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.areas-activity .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  padding: 1rem 0;
+}
+
+.areas-activity-list .box-container .box .links i {
+  color: var(--secondary-color);
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.areas-activity .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
 /* ==================================== Footer ============================== */
 
 .footer {
