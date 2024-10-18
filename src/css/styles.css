@@ -275,16 +275,34 @@ ul li {
 .professional-profile p {
   padding-bottom: 2rem;
 }
+
 .professional-profile-list {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2%;
 }
 
-.professional-profile-list li {
-  font-size: 1.7rem;
-  color: var(--primary-color);
-  line-height: 1.8;
+.professional-profile-list .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.professional-profile .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  padding: 1rem 0;
+}
+
+.professional-profile-list .box-container .box .links i {
+  color: var(--secondary-color);
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.professional-profile .box-container .box .links:hover i {
+  padding-right: 2rem;
 }
 
 /* ================================ Areas Activity ========================== */
@@ -318,6 +336,40 @@ ul li {
 }
 
 .areas-activity .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+/* ================================= Curriculum ============================= */
+.curriculum p {
+  padding-bottom: 2rem;
+}
+
+.curriculum-list {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2%;
+}
+
+.curriculum-list .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.curriculum-list .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  padding: 1rem 0;
+}
+
+.curriculum-list .box-container .box .links i {
+  color: var(--secondary-color);
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.curriculum-list .box-container .box .links:hover i {
   padding-right: 2rem;
 }
 
