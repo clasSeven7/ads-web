@@ -243,6 +243,7 @@ section {
 .home .content h3 {
   color: var(--primary-color);
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .home .content h3 span {

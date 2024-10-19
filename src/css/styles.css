@@ -296,6 +296,18 @@ ul li {
   line-height: 1.8;
 }
 
+.btn-home {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--white-color);
+  color: var(--white-color);
+  cursor: pointer;
+  background: none;
+}
+
 /* ========================= Professional Profile ============================*/
 .professional-profile p {
   padding-bottom: 2rem;
@@ -328,6 +340,13 @@ ul li {
 
 .professional-profile .box-container .box .links:hover i {
   padding-right: 2rem;
+}
+
+/* ================================== Info ================================== */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
 }
 
 /* ================================ Areas Activity ========================== */
