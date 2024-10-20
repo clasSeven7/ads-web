@@ -3,6 +3,23 @@
     font-size: 55%;
   }
 
+  .home .content {
+    width: 90%;
+  }
+
+  .home .content h3 {
+    font-size: 5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+
+  .home .content .text-content {
+    font-size: 1.8rem;
+    width: 45rem;
+  }
+
   .header {
     padding: 2rem;
   }
@@ -15,6 +32,24 @@
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
+  }
+
+  .header .navbar {
+    display: none;
+  }
+
+  .header .navbar.active {
+    display: block;
+  }
+
+  .header .navbar.active {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
   }
 
   .header .search-form {
@@ -48,11 +83,47 @@
     font-size: 50%;
   }
 
+  .home .content h3 {
+    font-size: 4rem;
+  }
+
+  .home .content p {
+    font-size: 1.4rem;
+  }
+
+  .home .content .text-content {
+    font-size: 1.6rem;
+    width: 40rem;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .header .navbar {
+    width: 27rem;
+  }
+
   .header {
     padding: 2.5rem;
   }
 
   .footer {
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .header .navbar {
+    width: 25rem;
+  }
+
+  .header .navbar a {
+    font-size: 1.8rem;
+    margin: 1.5rem 2rem;
   }
 }
