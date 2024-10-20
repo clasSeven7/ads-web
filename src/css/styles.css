@@ -84,7 +84,6 @@ section {
   right: 0;
   z-index: 1000;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
   background-color: var(--white-color);
@@ -224,6 +223,53 @@ section {
   text-decoration: underline;
 }
 
+.header .share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-left: 0.2rem;
+  text-align: center;
+}
+
+.header .share .face:hover {
+  color: #3b5998;
+}
+
+.header .share .x:hover {
+  color: #00acee;
+}
+
+.header .share .insta:hover {
+  color: #e4405f;
+}
+
+.header .share .yt:hover {
+  color: #cd201f;
+}
+
+.header-nav {
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  padding: 2rem 25%;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
 /* ===================================== Home =============================== */
 
 .home {
@@ -308,6 +354,11 @@ ul li {
   background: none;
 }
 
+.btn-home:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
 /* ========================= Professional Profile ============================*/
 .professional-profile p {
   padding-bottom: 2rem;
@@ -340,6 +391,30 @@ ul li {
 
 .professional-profile .box-container .box .links:hover i {
   padding-right: 2rem;
+}
+
+/* ============================== Registration ============================== */
+.registration {
+  padding-inline: 35%;
+}
+
+.registration .registration-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 0;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.registration .registration-link:hover {
+  /* background-color: var(--primary-color); */
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
 }
 
 /* ================================== Info ================================== */
@@ -443,9 +518,23 @@ ul li {
 }
 
 .inscription .inscription-link:hover {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   transform: scale(1.1);
   box-shadow: var(--box-shadow);
+}
+
+/* ============================ Embed Video ================================= */
+.embed-video {
+  padding-bottom: 2rem;
+  background-color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.embed-video iframe {
+  width: 100%;
+  height: 50rem;
+  border: none;
 }
 
 /* ================================ Areas Activity ========================== */
