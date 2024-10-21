@@ -7,6 +7,7 @@
   --secondary-color: #ee7d14;
   --tertiary-color: #6e6d6d;
   --quaternary-color: #000418;
+  --white-color: #fff;
 
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --border: 0.2rem solid rgba(0, 0, 0, 0.1);
@@ -222,10 +223,76 @@ section {
   text-decoration: underline;
 }
 
+/* ================================= Home =================================== */
+.home .content h3 {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+/* ============================== Container ================================= */
+.container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 2rem;
+  padding: 2rem 4%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container .container-left,
+.container .container-right {
+  padding: 0;
+}
+
+/* ---------------------------- Container left ------------------------------ */
+
+/* ---------------------------- Container right ----------------------------- */
+
+.container-right .utility {
+  /* background-color: var(--white-color); */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container-right .utility h2 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container-right .utility ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-right .utility ul li {
+  background-color: var(--white-color);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: solid 1px var(--white-color);
+  transition: background-color 0.3s ease;
+}
+
+.container-right .utility ul li:hover {
+  background-color: var(--secondary-color);
+  color: var(var(--white-color));
+}
+
+.container-right .utility ul li a {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container-right .utility ul li a:hover {
+  transform: scaleX(1.5);
+}
+
 /* =============================== Documentations  ========================== */
 .documentations {
   /* max-width: 80rem; */
-  margin: 2rem 6rem;
+  /* margin: 2rem 6rem; */
   padding: 2rem;
 }
 
