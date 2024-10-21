@@ -85,6 +85,7 @@ section {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   padding: 2rem 9%;
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
@@ -115,6 +116,12 @@ section {
   color: var(--secondary-color);
 }
 
+.header .icons {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
 .header .icons div {
   height: 4.5rem;
   width: 4.5rem;
@@ -131,6 +138,14 @@ section {
 .header .icons div:hover {
   background: var(--secondary-color);
   color: #eee;
+}
+
+.header .icons .search-box {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  justify-content: center;
 }
 
 #menu-btn {
@@ -259,7 +274,7 @@ section {
 
 .header-nav {
   position: fixed;
-  top: 8rem;
+  top: 8.5rem;
   left: 0;
   right: 0;
   justify-content: center;

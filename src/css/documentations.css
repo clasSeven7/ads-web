@@ -222,6 +222,125 @@ section {
   text-decoration: underline;
 }
 
+/* =============================== Documentations  ========================== */
+.documentations {
+  /* max-width: 80rem; */
+  margin: 2rem 6rem;
+  padding: 2rem;
+}
+
+.documentations h1 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.documentations h2 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.documentations .accordion {
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.documentations .accordion .accordion-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.documentations .accordion .accordion-header:hover {
+  transform: scale(1.02);
+}
+
+.documentations .accordion-header span {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.documentations .accordion .accordion-content {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.documentations .accordion .accordion-content ul {
+  list-style-type: none;
+  padding: 1rem 2rem;
+}
+
+.documentations .accordion-content li {
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #ddd;
+  font-size: 1.3rem;
+}
+
+.documentations .accordion-content li a {
+  color: var(--primary-color);
+}
+
+.documentations .accordion-content li a:hover {
+  color: var(--secondary-color);
+}
+
+.documentations .accordion-content li:last-child {
+  border-bottom: none;
+}
+
+/* ================================== Files ================================= */
+.files {
+  /* max-width: 80rem; */
+  margin: 2rem 6rem;
+  padding: 2rem;
+}
+
+.files h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.files .files-list {
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.files .files-list ul {
+  list-style-type: none;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+
+.files .files-list ul li {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  border-bottom: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.files .files-list ul li a {
+  color: var(--primary-color);
+}
+
+.files .files-list ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.files .files-list ul li a i {
+  padding-right: 0.5rem;
+}
+
 /* ==================================== Footer ============================== */
 
 .footer {
