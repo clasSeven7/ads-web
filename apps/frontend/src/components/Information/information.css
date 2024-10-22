@@ -1,0 +1,81 @@
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  color: var(--tertiary-color);
+  padding-bottom: 2rem;
+  margin: auto;
+  padding-inline: 20%;
+}
+
+.information .info-left,
+.information .info-right {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 1% 6%;
+  box-shadow: var(--box-shadow);
+}
+
+.information .info-left .info-1 {
+  padding: 2rem 0;
+}
+
+.information .info-left .info-2 {
+  padding-bottom: 2rem;
+}
+
+.information .info-left .info-3 {
+  padding-bottom: 2rem;
+}
+
+.information .info-left .info-4 {
+  padding-bottom: 2rem;
+}
+
+.information .info-left .info-1 span,
+.information .info-left .info-2 span,
+.information .info-left .info-3 span,
+.information .info-left .info-4 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.information .info-left .info-1 .info-bold,
+.information .info-left .info-2 .info-bold,
+.information .info-left .info-3 .info-bold,
+.information .info-left .info-4 .info-bold {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.information .info-right .info-5 {
+  padding: 2rem 0;
+}
+
+.information .info-right .info-6 {
+  padding-bottom: 2rem;
+}
+
+.information .info-right .info-7 {
+  padding-bottom: 2rem;
+}
+
+.information .info-right .info-8 {
+  padding-bottom: 2rem;
+}
+
+.information .info-right .info-5 span,
+.information .info-right .info-6 span,
+.information .info-right .info-7 span,
+.information .info-right .info-8 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.information .info-right .info-5 .info-bold,
+.information .info-right .info-6 .info-bold,
+.information .info-right .info-7 .info-bold,
+.information .info-right .info-8 .info-bold {
+  font-weight: 600;
+  gap: 1rem;
+  color: var(--primary-color);
+}

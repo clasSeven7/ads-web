@@ -1,0 +1,31 @@
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+.heading span {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}

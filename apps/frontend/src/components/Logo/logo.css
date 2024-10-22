@@ -1,0 +1,6 @@
+.icon-logo {
+  width: 100px;
+  height: auto;
+  display: block; /* Garante que não haja comportamento estranho de layout */
+  margin: 0 auto; /* Centraliza se necessário */
+}
