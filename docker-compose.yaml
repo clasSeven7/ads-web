@@ -1,6 +1,6 @@
 services:
   backend:
-    container_name: backend
+    container_name: backend_ads_web
     build:
       context: .
       dockerfile: apps/docker/backend/Dockerfile
@@ -12,7 +12,7 @@ services:
       - db
 
   db:
-    container_name: db
+    container_name: db_ads_web
     image: postgres:15-alpine
     ports:
       - '5432:5432'
