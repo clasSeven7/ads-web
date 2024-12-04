@@ -50,7 +50,6 @@ export default function Home() {
               <span>2 anos e meio</span>
             </div>
 
-            {/* Botão */}
             <div className="mt-8">
               <Link
                 href="#"
@@ -76,8 +75,9 @@ export default function Home() {
         <section>
           <div className="flex justify-center items-center">
             <Link
-              href="#"
+              href="../files/matriz_curricular.pdf"
               className="flex justify-center items-center gap-2 text-white bg-orange-500 px-32 py-5 rounded-md mt-8 transform transition-transform duration-300 ease-in-out hover:scale-110"
+              target="_blank"
             >
               <File />
               Matriz Curricular
@@ -141,7 +141,8 @@ export default function Home() {
         <section>
           <div className="flex justify-center items-center">
             <Link
-              href="#"
+              href="https://www.studus.com.br/StudusFIP/inscricaoonline/inscricaoonline.xhtml?curso=ADS"
+              target="_blank"
               className="flex justify-center items-center gap-2 text-white bg-blue-950 px-32 py-5 rounded-md mt-8 transform transition-transform duration-300 ease-in-out hover:scale-110"
             >
               <SquarePen />
@@ -150,16 +151,110 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="bg-white flex justify-center items-center mt-8">
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="500"
             src="https://www.youtube.com/embed/iYg5at4OXiE?si=fSIppt9hkliDTPkW"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="p-4"
           ></iframe>
+        </section>
+
+        <section className="mb-10">
+          <Header title="Área" spanText="Atuação" />
+
+          <div className="grid grid-cols-4 gap-6 mx-20">
+            <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-110">
+              <div className="relative w-full h-80">
+                <Image
+                  src="/areas-activity/image-1.png"
+                  alt="Imagem 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-center text-xl font-bold text-blue-950">
+                  Analista de sistemas
+                </h2>
+                <p className="text-zinc-700 mt-4">
+                  Profissional que analisa e desenvolve softwares e programas.
+                  Mapeia processos e realiza modelagem de dados, visando estudar
+                  e implementar sistemas.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-110">
+              <div className="relative w-full h-80">
+                <Image
+                  src="/areas-activity/image-2.png"
+                  alt="Imagem 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-center text-xl font-bold text-blue-950">
+                  Gestor de projetos de sistemas
+                </h2>
+                <p className="text-zinc-700 mt-4">
+                  Faz a interligação entre a administração da empresa e a área
+                  de computação.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-110">
+              <div className="relative w-full h-80">
+                <Image
+                  src="/areas-activity/image-3.png"
+                  alt="Imagem 3"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-center text-xl font-bold text-blue-950">
+                  Técnico de desenvolvimento de softwares e aplicativos
+                </h2>
+                <p className="text-zinc-700 mt-4">
+                  labora programas e jogos para computadores e celulares.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-110">
+              <div className="relative w-full h-80">
+                <Image
+                  src="/areas-activity/image-4.png"
+                  alt="Imagem 4"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-center text-xl font-bold text-blue-950">
+                  Gerente de projetos de sistemas
+                </h2>
+                <p className="text-zinc-700 mt-4">
+                  É responsável por gerenciar o projeto em todos seus estágios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white">
+          <Header title="Perfil" spanText="Profissional" />
+          <p className="text-left px-28 text-zinc-600 text-lg">
+            O profissional formado em Análise e Desenvolvimento de Sistemas é
+            capaz de analisar, projetar, desenvolver, implementar e manter
+            sistemas de informação, com conhecimentos de programação, banco de
+            dados, redes, engenharia de software, sistemas operacionais, entre
+            outros.
+          </p>
         </section>
       </main>
     </>
