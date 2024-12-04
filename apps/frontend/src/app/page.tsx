@@ -16,8 +16,10 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-white text-7xl font-semibold">
-            <h1>ANALISE E DESENVOLVIMENTO DE SISTEMAS</h1>
+          <div className="text-white justify-center text-7xl font-semibold px-28">
+            <h1 className="text-center">
+              ANALISE E DESENVOLVIMENTO DE SISTEMAS
+            </h1>
           </div>
         </div>
       </main>
