@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 import {
+  ArrowRight,
   Book,
   Clock4,
   DollarSign,
@@ -75,7 +76,7 @@ export default function Home() {
         <section>
           <div className="flex justify-center items-center">
             <Link
-              href="../files/matriz_curricular.pdf"
+              href="/files/matriz-curricular.pdf"
               className="flex justify-center items-center gap-2 text-white bg-orange-500 px-32 py-5 rounded-md mt-8 transform transition-transform duration-300 ease-in-out hover:scale-110"
               target="_blank"
             >
@@ -246,15 +247,176 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-white">
+        <section className="bg-white px-8 py-6 rounded-lg shadow-md">
           <Header title="Perfil" spanText="Profissional" />
-          <p className="text-left px-28 text-zinc-600 text-lg">
+          <p className="text-left px-28 text-zinc-600 text-lg my-3">
             O profissional formado em Análise e Desenvolvimento de Sistemas é
             capaz de analisar, projetar, desenvolver, implementar e manter
             sistemas de informação, com conhecimentos de programação, banco de
             dados, redes, engenharia de software, sistemas operacionais, entre
             outros.
           </p>
+          <div className="ml-24">
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Análise de Requisitos
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Modelagem de Sistemas
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Desenvolvimento e Integração
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Testes e Qualidade
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Suporte e Manutenção
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Banco de Dados
+              </span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="px-8 py-6 rounded-lg shadow-md">
+          <Header title="Estrutura" spanText="Curricular" />
+
+          <p className="text-left px-28 text-zinc-600 text-lg my-3">
+            O profissional formado em Análise e Desenvolvimento de Sistemas é
+            capaz de analisar, projetar, desenvolver, implementar e manter
+            sistemas de informação, com conhecimentos de programação, banco de
+            dados, redes, engenharia de software, sistemas operacionais, entre
+            outros.
+          </p>
+
+          <div className="ml-24">
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Análise de Requisitos
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Modelagem de Sistemas
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Desenvolvimento e Integração
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Testes e Qualidade
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Suporte e Manutenção
+              </span>
+            </Link>
+            <Link
+              href="#"
+              className="links flex items-center text-base transition-all duration-300 py-2"
+            >
+              <ArrowRight
+                size={20}
+                className="text-orange-500 mr-2 transition-all duration-300 hover:mr-6"
+              />
+              <span className="text-zinc-700 hover:ml-5 transition-all duration-300">
+                Banco de Dados
+              </span>
+            </Link>
+          </div>
         </section>
       </main>
     </>
