@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 import {
@@ -32,7 +33,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Conteúdo principal */}
         <section className="relative z-10 flex items-center justify-center h-full text-white">
           <div className="container text-center px-4 sm:px-12">
             <div className="flex justify-center items-center">
@@ -418,6 +418,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        <Footer />
       </main>
     </>
   );
