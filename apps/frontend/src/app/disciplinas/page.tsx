@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 import { SidebarOpen } from 'lucide-react';
@@ -31,12 +32,12 @@ export default function DisciplinasPage() {
       { foto: '/teacher/dilma.png', disciplina: 'Inglês', professor: 'Dilma' },
       {
         foto: '/teacher/thiago-laurentino.png',
-        disciplina: 'Arquitetura e Organização de Computadores',
+        disciplina: 'Arq. e Org. de Computadores (AOC)',
         professor: 'Thiago Laurentino',
       },
       {
         foto: '/teacher/janne.png',
-        disciplina: 'Fundamentos da Matemática e Lógica',
+        disciplina: 'Fund. da Matemática e Lógica',
         professor: 'Janne',
       },
     ],
@@ -48,12 +49,12 @@ export default function DisciplinasPage() {
       },
       {
         foto: '/teacher/roberta.png',
-        disciplina: 'Fundamentos da Administração e Finanças',
+        disciplina: 'Fund. da Admin e Finanças',
         professor: 'Roberta',
       },
       {
         foto: '/teacher/pablo-roberto.png',
-        disciplina: 'Programação Orientada a Objetos (POO)',
+        disciplina: 'Prog. Orientada a Objetos (POO)',
         professor: 'Pablo Roberto',
       },
       {
@@ -122,12 +123,12 @@ export default function DisciplinasPage() {
       },
       {
         foto: '/teacher/allyson.png',
-        disciplina: '(Eletiva) Desenvolvimento de Jogos',
+        disciplina: '(Eletiva) Desenv. de Jogos',
         professor: 'Allyson',
       },
       {
         foto: '/teacher/pablo-roberto.png',
-        disciplina: 'Métodos Avançados de Programação (MAP)',
+        disciplina: 'Métodos Avançados de Progr. (MAP)',
         professor: 'Pablo Roberto',
       },
     ],
@@ -164,8 +165,8 @@ export default function DisciplinasPage() {
     <>
       <Navbar />
       <Banner name="Disciplinas" />
-      <div className="min-h-screen bg-gray-100 flex flex-col md:flex-row-reverse">
-        <nav className="bg-white shadow-md w-full md:w-1/4 p-6 mt-10 mr-10 h-1/4">
+      <div className="min-h-screen bg-zinc-100 flex flex-row-reverse">
+        <nav className="bg-white shadow-md w-72 p-6 mt-10 mr-10 h-1/4">
           <h2 className="text-xl font-bold text-blue-950 mb-6 flex items-center gap-2">
             <SidebarOpen size={24} /> UTILIDADES
           </h2>
@@ -188,7 +189,7 @@ export default function DisciplinasPage() {
           {/* Listagem de Períodos e Disciplinas */}
           {Object.entries(disciplinasPorPeriodo).map(
             ([periodo, disciplinas]) => (
-              <section key={periodo} className="space-y-6">
+              <section key={periodo} className="space-y-6 mb-10 ">
                 <h2 className="text-xl font-semibold text-blue-950">
                   {periodo}
                 </h2>
@@ -221,6 +222,7 @@ export default function DisciplinasPage() {
           )}
         </main>
       </div>
+      <Footer />
     </>
   );
 }
