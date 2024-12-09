@@ -34,6 +34,7 @@ export default function Home() {
       description: 'coordenacao@ads.fiponline.edu.br',
     },
     { icon: Phone, title: 'Contato', description: '(83) 3421-4047' },
+    { icon: Phone, title: 'Contato', description: '(83) 3421-4047' },
   ];
   return (
     <>
