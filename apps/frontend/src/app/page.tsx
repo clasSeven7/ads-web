@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import InfoSection from '@/components/InfoSection';
 import Navbar from '@/components/Navbar';
 import {
   ArrowRight,
@@ -17,6 +18,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
+  const section1Items = [
+    { icon: DollarSign, title: 'Matrícula', description: 'R$ 688,00' },
+    { icon: DollarSign, title: 'Mensalidade', description: 'R$ 688,00' },
+    { icon: Clock4, title: 'Turno', description: 'Noturno' },
+    { icon: GraduationCap, title: 'Duração', description: '2 anos e meio' },
+  ];
+
+  const section2Items = [
+    { icon: MapPin, title: 'Local', description: 'Patos, Brasil' },
+    { icon: Book, title: 'Coordenador', description: 'Sormany Silva Dantas' },
+    {
+      icon: Mail,
+      title: 'Email',
+      description: 'coordenacao@ads.fiponline.edu.br',
+    },
+    { icon: Phone, title: 'Contato', description: '(83) 3421-4047' },
+  ];
   return (
     <>
       <Navbar />
@@ -87,56 +105,8 @@ export default function Home() {
         </section>
 
         <section className="grid grid-cols-2 gap-4 mx-60 mt-10">
-          <div className="bg-white shadow-2xl rounded-lg">
-            <div className="py-4 pl-6">
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <DollarSign size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Matrícula:</span>
-                <span className="text-zinc-700">R$ 688,00</span>
-              </div>
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <DollarSign size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Mensalidade:</span>
-                <span className="text-zinc-700">R$ 688,00</span>
-              </div>
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <Clock4 size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Turno:</span>
-                <span className="text-zinc-700">Noturno</span>
-              </div>
-              <div className="flex justify-left items-center gap-1">
-                <GraduationCap size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Duração:</span>
-                <span className="text-zinc-700">2 anos e meio</span>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white shadow-2xl rounded-lg">
-            <div className="py-4 pl-6">
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <MapPin size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Local:</span>
-                <span className="text-zinc-700">Patos, Brasil</span>
-              </div>
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <Book size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Coordenador:</span>
-                <span className="text-zinc-700">Sormany Silva Dantas</span>
-              </div>
-              <div className="flex justify-left items-center gap-1 mb-3">
-                <Mail size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Email:</span>
-                <span className="text-zinc-700">
-                  coordenacao@ads.fiponline.edu.br
-                </span>
-              </div>
-              <div className="flex justify-left items-center gap-1">
-                <Phone size={20} className="text-blue-950 font-bold" />
-                <span className="text-blue-950 font-bold">Contado:</span>
-                <span className="text-zinc-700">(83) 3421-4047</span>
-              </div>
-            </div>
-          </div>
+          <InfoSection items={section1Items} />
+          <InfoSection items={section2Items} />
         </section>
 
         <section>
